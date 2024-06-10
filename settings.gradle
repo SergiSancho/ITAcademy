@@ -1,0 +1,4 @@
+rootProject.name = 'ITAcademy'
+include 'sprint1'
+include 'sprint2'
+
