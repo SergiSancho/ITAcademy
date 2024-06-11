@@ -2,7 +2,7 @@
 # Sprint 1
 ## Tasca 1
 
-[Nivell 1 - Exercici 1] (https://github.com/SergiSancho/Lliurament1/tree/master/src/n1Exercici1)
+[Nivell 1 - Exercici 1] (https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca1/n1exercici1)
 
 En un grup de música hi ha diferents tipus d’instruments musicals. Hi ha instruments de vent, de corda i de percussió.
 Tots els instruments tenen com a atributs el seu nom, i el seu preu. A més, tenen un mètode anomenat tocar(). Aquest, és abstracte a la classe instrument i, 
@@ -12,7 +12,7 @@ El procés de càrrega d'una classe només té lloc una vegada. Demostra que la 
 o per l'accés a un membre estàtic d'aquesta. 
 Cerca informació sobre els blocs d'inicialització i blocs estàtics en Java.
 
-[Nivell 1- Exercici 2] (https://github.com/SergiSancho/Lliurament1/tree/master/src/n1Exercici2)
+[Nivell 1- Exercici 2] (https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca1/n1exercici2)
 
 Crea una classe "Cotxe" amb els atributs: marca, model i potència. La marca ha de ser estàtic final, el model estàtic i la potència final. 
 Demostra la diferència entre els tres. N’hi ha algun que es pugui inicialitzar al constructor de la classe?
@@ -20,7 +20,7 @@ Afegeix dos mètodes a la classe "Cotxe". Un mètode estàtic anomenat frenar() 
 mostrar per consola: “El vehicle està accelerant” i el mètode frenar() ha de mostrar: “El vehicle està frenant”. 
 Demostra com invocar el mètode estàtic i el no estàtic des del main() de la classe principal.
 
-[Nivell 2 - Exercici 1] (https://github.com/SergiSancho/Lliurament1/tree/master/src/n2Exercici1)
+[Nivell 2 - Exercici 1] (https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca1/n2exercici1)
 
 Crea una classe anomenada "Telèfon" amb els atributs marca i model, i el mètode trucar(). Aquest mètode ha de rebre un String amb un número de telèfon. 
 El mètode ha de mostrar per consola un missatge dient que s’està trucant al número rebut per paràmetre. 
@@ -29,7 +29,7 @@ Crea una classe anomenada "Smartphone" que sigui subclasse de "Telèfon" i que a
 El mètode fotografiar() ha de mostrar per consola: “S’està fent una foto” i el mètode alarma() ha de mostrar: “Està sonant l’alarma”.
 Des del main() de l’aplicació, crea un objecte Smartphone i crida als mètodes anteriors.
 
-[Nivell 3 - Exercici 1] (https://github.com/SergiSancho/Lliurament1/tree/master/src/n3exercici1)
+[Nivell 3 - Exercici 1] (https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca1/n3exercici1)
 
 En una redacció de notícies esportives tenen les notícies classificades per esports: futbol, bàsquet, tenis, F1 i motociclisme.
 La redacció pot tenir més d’un redactor, i de cadascun d’ells volem saber el seu nom, el DNI i el sou. Un cop assignat un DNI, aquest no podrà canviar mai. 
