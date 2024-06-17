@@ -6,9 +6,10 @@ import java.util.Scanner;
 import tasca1.n3exercici1.herencia.*;
 
 public class Main {
+    private static final byte MINIMO = 0;
+    private static final byte MAXIMO = 7;
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         ArrayList<Redactor> redactors = new ArrayList<>();
 
@@ -48,8 +49,6 @@ public class Main {
     public static byte menu() {
         Scanner sc = new Scanner(System.in);
         byte opcio;
-        final byte MINIMO = 0;
-        final byte MAXIMO = 7;
 
         do {
             System.out.println("\nMENú PRINCIPAL");

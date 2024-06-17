@@ -49,8 +49,7 @@ public class NoticiaBasquet extends Noticia {
         int puntuacio = 4;
         if (competicio.equalsIgnoreCase("Eurolliga")) {
             puntuacio += 3;
-        }
-        if (competicio.equalsIgnoreCase("ACB")) {
+        } else if (competicio.equalsIgnoreCase("ACB")) {
             puntuacio += 2;
         }
         if (club.equalsIgnoreCase("Barça") || club.equalsIgnoreCase("Madrid")) {

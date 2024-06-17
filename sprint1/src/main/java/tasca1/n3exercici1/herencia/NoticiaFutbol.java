@@ -61,8 +61,7 @@ public class NoticiaFutbol extends Noticia {
         int puntuacio = 5;
         if (competicio.equalsIgnoreCase("Lliga de Campions")) {
             puntuacio += 3;
-        }
-        if (competicio.equalsIgnoreCase("Lliga")) {
+        } else if (competicio.equalsIgnoreCase("Lliga")) {
             puntuacio += 2;
         }
         if (club.equalsIgnoreCase("Barça") || club.equalsIgnoreCase("Madrid")) {

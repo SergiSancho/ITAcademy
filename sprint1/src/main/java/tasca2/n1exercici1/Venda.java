@@ -13,6 +13,10 @@ public class Venda {
         this.preuTotal = 0.0;
     }
 
+    public List<Producte> getProductes() {
+        return productes;
+    }
+
     public void afegirProducte(Producte producte){
         this.productes.add(producte);
     }
