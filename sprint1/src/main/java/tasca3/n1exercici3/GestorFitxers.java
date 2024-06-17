@@ -33,7 +33,7 @@ public class GestorFitxers {
 
     public void desarPuntuacio(String nomUsuari, int puntuacio) {
 
-        String filePath = System.getProperty("user.dir") + FITXER_PUNTUACIO;
+        String filePath = System.getProperty("user.dir" ) + "\\sprint1\\src\\main\\resources" + FITXER_PUNTUACIO;
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.write(nomUsuari + ": " + puntuacio + " punts\n");
