@@ -12,11 +12,11 @@ public class ListaDir {
             return;
         }
 
-        String[] contingut = dir.list();
+        File[] contingut = dir.listFiles();
         Arrays.sort(contingut);
         System.out.println("Contingut de: " + dir + ":");
-        for (String arxiu : contingut) {
-            System.out.println(arxiu);
+        for (File arxiu : contingut) {
+            System.out.println(arxiu.getName());
         }
     }
 }
