@@ -1,8 +1,9 @@
-package tasca6.n1exercici2;
+package tasca5.n1exercici5;
 
-import java.io.Serializable;
+public class Persona {
 
-public class Persona implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String nom;
     private String cognom;
     private int edat;
