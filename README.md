@@ -117,14 +117,37 @@ L'únic mètode que hem de sobreescriure és featureValueOf (T actual), que reto
 Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
 
 [Nivell 1 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici2)
+
 Afegeix a la classe de l’exercici anterior, la funcionalitat de llistar un arbre de directoris amb el contingut de tots els seus nivells (recursivament) de manera que s'imprimeixin en pantalla en ordre alfabètic dins de cada nivell, indicant a més si és un directori (D) o un fitxer (F), i la seva última data de modificació.
 
 [Nivell 1 - Exercici 3](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici3)
+
 Modifica l’exercici anterior. Ara, en lloc de mostrar el resultat per la pantalla, guarda el resultat en un fitxer TXT.
 
 [Nivell 1 - Exercici 4](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici4)
+
 Afegeix la funcionalitat de llegir qualsevol fitxer TXT i mostra el seu contingut per consola.
 
 [Nivell 1 - Exercici 5](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici5)
+
 Ara el programa ha de serialitzar un Objecte Java a un fitxer .ser i després l’ha de desserialitzar.
+
+## Tasca 6. Generics
+
+[Nivell 1 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca6/n1exercici1)
+
+Crea una classe anomenada NoGenericMethods que emmagatzemi tres objectes del mateix tipus, juntament amb els mètodes per a emmagatzemar i extreure aquests objectes i un constructor per a inicialitzar els tres. Comprova que els arguments es poden posar en qualsevol posició en la crida al constructor.
+
+[Nivell 1 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca6/n1exercici2)
+
+Crea una classe anomenada Persona amb els atributs nom, cognom i edat. Després crea una classe anomenada GenericMethods amb un mètode genèric que accepti tres arguments de tipus genèric. Aquest mètode només ha d’imprimir per pantalla els arguments que ha rebut. Al main() de la classe principal, crida el mètode genèric amb diferents tipus de paràmetres.
+
+[Nivell 2 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca6/n2exercici1)
+
+Modifica l'exercici anterior de manera que un dels arguments del mètode genèric no sigui genèric.
+
+[Nivell 2 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca6/n2exercici2)
+
+Modifica l'apartat anterior de manera que els arguments del mètode genèric siguin una llista d'arguments de variable indefinida.
+
 
