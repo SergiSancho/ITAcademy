@@ -68,6 +68,7 @@ Crea un segon List<Integer> i insereix a la segona llista els elements de la pri
 Empra els objectes ListIterator per a llegir els elements de la primera llista i inserir-los en la segona.
 
 [Nivell 1 - Exercici 3](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca3/n1exercici3)
+
 Donat el fitxer countrties.txt (revisa l'apartat recursos) que conté països i capitals. El programa ha de llegir el fitxer i guardar les dades en un HashMap<String, String>. El programa demana el nom de l’usuari/ària, i després ha de mostrar un país de forma aleatòria, guardat en el HashMap. Es tracta de què l’usuari/ària ha d’escriure el nom de la capital del país en qüestió. Si l’encerta se li suma un punt. Aquesta acció es repeteix 10 vegades. Un cop demanades les capitals de 10 països de forma aleatòria, llavors s’ha de guardar en un fitxer anomenat classificacio.txt, el nom de l’usuari/ària i la seva puntuació.
 
 [Nivell 2 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca3/n2exercici1)
@@ -77,4 +78,53 @@ Crea una classe anomenada Restaurant amb dos atributs: nom(String) i puntuació(
 [Nivell 2 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca3/n2exercici2)
 
 Utilitzant la classe del programa anterior, crea la implementació necessària perquè els objectes de la classe Restaurant estiguin ordenats per nom i per puntuació en ordre ascendent. 
+
+## Tasca 4. Testing
+
+[Nivell 1 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/test/java/tasca4/n1exercici1)
+
+Crea una classe Java que insereixi en una llista ordenada els noms dels mesos de l'any.
+Verifica amb jUnit que la llista té 12 posicions, que no és nul·la i que en la seva posició 8 conté el nom 'agost'.
+
+[Nivell 1 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/test/java/tasca4/n1exercici2)
+
+Crea una classe anomenada CalculoDni que calculi la lletra del DNI en rebre el número com a paràmetre.
+Crea una classe jUnit que verifiqui el seu correcte funcionament, parametritzant-la perquè el test rebi un espectre de dades ampli i validi si el càlcul és correcte per a 10 números de DNI predefinits.
+
+[Nivell 1 - Exercici 3](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/test/java/tasca4/n1exercici3)
+
+Crea una classe amb un mètode que llanci una ArrayIndexOutOfBoundsException.
+Verifica el seu correcte funcionament amb un test jUnit.
+
+[Nivell 2 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca4/n2exercici1)
+
+[Test](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/test/java/tasca4/n2exercici1)
+
+Defineix un Matcher personalitzat per a Hamcrest que proporcioni el Matcher de longitud per a un String.
+Volem usar la classe ->FeatureMatcher.
+Amb FeatureMatcher podem ajustar un Matcher existent, decidir quin camp de l'Objecte prova ha de coincidir i proporcionar un missatge d'error agradable. El constructor de FeatureMatcher té els següents arguments en aquest ordre:
+El matcher que volem embolicar.
+Una descripció de la funció que provem.
+Una descripció del possible mismatch (desajustament).
+L'únic mètode que hem de sobreescriure és featureValueOf (T actual), que retorna el valor que es passarà al mètode match () / matchesSafely (). Utilitza el seu comparador personalitzat en una prova per a comprovar si la cadena "Mordor" té una longitud de 8.
+
+## Tasca 5. Java Utils
+
+[Instruccions per compilar i executar](https://github.com/SergiSancho/ITAcademy/blob/master/sprint1/src/main/java/tasca5/README.md)
+
+[Nivell 1 - Exercici 1](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici1)
+
+Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
+
+[Nivell 1 - Exercici 2](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici2)
+Afegeix a la classe de l’exercici anterior, la funcionalitat de llistar un arbre de directoris amb el contingut de tots els seus nivells (recursivament) de manera que s'imprimeixin en pantalla en ordre alfabètic dins de cada nivell, indicant a més si és un directori (D) o un fitxer (F), i la seva última data de modificació.
+
+[Nivell 1 - Exercici 3](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici3)
+Modifica l’exercici anterior. Ara, en lloc de mostrar el resultat per la pantalla, guarda el resultat en un fitxer TXT.
+
+[Nivell 1 - Exercici 4](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici4)
+Afegeix la funcionalitat de llegir qualsevol fitxer TXT i mostra el seu contingut per consola.
+
+[Nivell 1 - Exercici 5](https://github.com/SergiSancho/ITAcademy/tree/master/sprint1/src/main/java/tasca5/n1exercici5)
+Ara el programa ha de serialitzar un Objecte Java a un fitxer .ser i després l’ha de desserialitzar.
 
