@@ -10,7 +10,7 @@ public class Venda {
 
     public Venda() {
         this.productes = new ArrayList<>();
-        this.preuTotal = 0.0;
+
     }
 
     public List<Producte> getProductes() {
@@ -35,7 +35,6 @@ public class Venda {
 
             throw new VendaBuidaException();
         }
-        preuTotal = 0.0;
 
         for (Producte producte : productes){
 
