@@ -17,20 +17,23 @@ public class ListaArbreDir {
         }
 
         File[] contingut = dir.listFiles();
+        if (contingut == null) {
+            System.out.println("No es pot llegir el contingut del directori: " + ruta);
+            return;
+        }
         Arrays.sort(contingut);
 
         for (File arxiu : contingut) {
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-            String tipus;
-            if (arxiu.isDirectory()) {
-                tipus = "D";
+
+            if (arxiu.isFile()) {
+                System.out.println(indentacio + "[F] " +
+                        arxiu.getName() + " Última modificació: " +
+                        sdf.format(arxiu.lastModified()));
             } else {
-                tipus = "F";
-            }
-            System.out.println(indentacio + tipus + " " +
-                    arxiu.getName() + " Última modificació: " +
-                    sdf.format(arxiu.lastModified()));
-            if (arxiu.isDirectory()) {
+                System.out.println(indentacio + "[D] " +
+                        arxiu.getName() + " Última modificació: " +
+                        sdf.format(arxiu.lastModified()));
                 indentacio += "   ";
                 listarArbreDirectori(arxiu.getPath());
                 indentacio = indentacio.substring(0, indentacio.length() - 3);
