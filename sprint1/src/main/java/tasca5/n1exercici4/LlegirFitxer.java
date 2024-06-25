@@ -12,9 +12,9 @@ public class LlegirFitxer {
                 System.out.println(linia);
             }
         } catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 }
