@@ -8,23 +8,30 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        Persona persona = new Persona("Luther", "Blisset",54);
+        Persona persona = new Persona("Luther", "Blisset", 54);
 
         try {
             JsonSerializable jsonAnotacio = persona.getClass().getAnnotation(JsonSerializable.class);
-            String directori = System.getProperty("user.dir") + File.separator;
-            String arxiu = directori + "persona.json";
-            Gson gson = new Gson();
-            String jsonString = gson.toJson(persona);
+            if (jsonAnotacio != null) {
+                String directori = jsonAnotacio.directori();
+                if (directori.isEmpty()) {
+                    directori = System.getProperty("user.dir");
+                }
+                String arxiu = directori + File.separator + "persona.json";
 
-            try (FileWriter write = new FileWriter(arxiu)){
+                Gson gson = new Gson();
+                String jsonString = gson.toJson(persona);
 
-                write.write(jsonString);
-                System.out.println("Objecte serialitzat a " + arxiu);
-            } catch (IOException e){
-                e.printStackTrace();
+                try (FileWriter writer = new FileWriter(arxiu)) {
+                    writer.write(jsonString);
+                    System.out.println("Objecte serialitzat a " + arxiu);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                System.err.println("L'anotació JsonSerializable no està present.");
             }
-        } catch (SecurityException e){
+        } catch (SecurityException e) {
             e.printStackTrace();
         }
     }
