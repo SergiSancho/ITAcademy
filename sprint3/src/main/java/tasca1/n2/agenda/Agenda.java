@@ -21,21 +21,20 @@ public class Agenda {
         FabricaAbstracta fabrica = FabricaProductor.getFabrica(tipusFabrica);
         if (fabrica == null) {
             System.out.println("País encara no vàlid");
-            return;
+        } else {
+            String nom = llegirString("Introdueix el nom del contacte: ");
+            String carrer = llegirString("Introdueix el carrer: ");
+            String numero = llegirString("Introdueix el numero del carrer: ");
+            String codiPostal = llegirString("Introdueix el codi postal: ");
+            String ciutat = llegirString("Introdueix la ciutat: ");
+            String numeroTelefon = llegirString("Introdueix el número de telèfon: ");
+
+            Adreca adreca = fabrica.crearAdreca(carrer, numero, codiPostal, ciutat);
+            Telefon telefon = fabrica.crearTelefon(numeroTelefon);
+            Contacte contacte = new Contacte(nom, adreca, telefon);
+            contactes.add(contacte);
+            System.out.println("Contacte afegit a l'agenda: " + contacte);
         }
-
-        String nom = llegirString("Introdueix el nom del contacte: ");
-        String carrer = llegirString("Introdueix el carrer: ");
-        String numero = llegirString("Introdueix el numero del carrer: ");
-        String codiPostal = llegirString("Introdueix el codi postal: ");
-        String ciutat = llegirString("Introdueix la ciutat: ");
-        String numeroTelefon = llegirString("Introdueix el número de telèfon: ");
-
-        Adreca adreca = fabrica.crearAdreca(carrer, numero, codiPostal, ciutat);
-        Telefon telefon = fabrica.crearTelefon(numeroTelefon);
-        Contacte contacte = new Contacte(nom, adreca, telefon);
-        contactes.add(contacte);
-        System.out.println("Contacte afegit a l'agenda: " + contacte);
     }
 
     public void eliminarContacte() {
