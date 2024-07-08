@@ -1,4 +1,5 @@
 rootProject.name = 'ITAcademy'
 include 'sprint1'
 include 'sprint2'
+include 'Sprint3.2'
 
