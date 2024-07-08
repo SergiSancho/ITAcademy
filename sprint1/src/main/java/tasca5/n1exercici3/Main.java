@@ -6,9 +6,9 @@ public class Main {
             System.out.println("Has d'introduir dos paràmetres: ");
             System.out.println("1. Ruta del directori a llistar");
             System.out.println("2. Ruta del fitxer on vols escriure la llista");
-            return;
+        } else {
+            EscriuArbreDir.writerArbreDir(args[0], args[1]);
         }
-        EscriuArbreDir.writerArbreDir(args[0], args[1]);
     }
 }
 

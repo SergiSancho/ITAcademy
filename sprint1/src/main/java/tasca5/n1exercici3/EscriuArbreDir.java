@@ -17,13 +17,12 @@ public class EscriuArbreDir {
 
         if (!dir.isDirectory()) {
             System.out.println("Aixo no es un directori");
-            return;
-        }
-
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArxiu))) {
-            writeDirectoryTree(dir, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArxiu))) {
+                writeDirectoryTree(dir, writer);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -31,27 +30,26 @@ public class EscriuArbreDir {
         File[] contingut = dir.listFiles();
         if (contingut == null) {
             writer.write("No es pot llegir el contingut del directori: " + dir.getPath() + "\n");
-            return;
-        }
+        } else {
+            Arrays.sort(contingut);
 
-        Arrays.sort(contingut);
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            for (File arxiu : contingut) {
+                if (arxiu.isFile()) {
+                    writer.write(indentacio + "[F] " +
+                            arxiu.getName() + " Última modificació: " +
+                            sdf.format(arxiu.lastModified()) + "\n");
+                } else if (arxiu.isDirectory()) {
+                    writer.write(indentacio + "[D] " +
+                            arxiu.getName() + " Última modificació: " +
+                            sdf.format(arxiu.lastModified()) + "\n");
 
-        for (File arxiu : contingut) {
-            if (arxiu.isFile()) {
-                writer.write(indentacio + "[F] " +
-                        arxiu.getName() + " Última modificació: " +
-                        sdf.format(arxiu.lastModified()) + "\n");
-            } else if (arxiu.isDirectory()) {
-                writer.write(indentacio + "[D] " +
-                        arxiu.getName() + " Última modificació: " +
-                        sdf.format(arxiu.lastModified()) + "\n");
-
-                String currentIndentacio = indentacio;
-                indentacio += "   ";
-                writeDirectoryTree(arxiu, writer);
-                indentacio = currentIndentacio;
+                    String currentIndentacio = indentacio;
+                    indentacio += "   ";
+                    writeDirectoryTree(arxiu, writer);
+                    indentacio = currentIndentacio;
+                }
             }
         }
     }
