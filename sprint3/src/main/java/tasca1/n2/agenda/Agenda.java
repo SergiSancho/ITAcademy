@@ -41,14 +41,14 @@ public class Agenda {
     public void eliminarContacte() {
         if (contactes.isEmpty()) {
             System.out.println("L'agenda està buida");
-            return;
-        }
-        int index = llegirInt("Introdueix índex del contacte a eliminar: ") - 1;
-        if (index >= 0 && index < contactes.size()) {
-            Contacte contacteEliminat = contactes.remove(index);
-            System.out.println("Contacte eliminat de l'agenda: " + contacteEliminat);
         } else {
-            System.out.println("Índex de contacte no vàlid");
+            int index = llegirInt("Introdueix índex del contacte a eliminar: ") - 1;
+            if (index >= 0 && index < contactes.size()) {
+                Contacte contacteEliminat = contactes.remove(index);
+                System.out.println("Contacte eliminat de l'agenda: " + contacteEliminat);
+            } else {
+                System.out.println("Índex de contacte no vàlid");
+            }
         }
     }
 

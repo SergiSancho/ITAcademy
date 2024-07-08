@@ -40,7 +40,5 @@ public class Sabateria {
             }
 
         } while (!sortir);
-
-
     }
 }
