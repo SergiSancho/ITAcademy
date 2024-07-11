@@ -9,7 +9,7 @@ public class ListaDir {
 
         if(!dir.isDirectory()){
             System.out.println("Aixo no es un directori");
-        } else{
+        } else {
             File[] contingut = dir.listFiles();
             Arrays.sort(contingut);
             System.out.println("Contingut de: " + dir + ":");
@@ -17,7 +17,5 @@ public class ListaDir {
                 System.out.println(arxiu.getName());
             }
         }
-
-
     }
 }

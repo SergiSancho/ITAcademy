@@ -4,9 +4,8 @@ public class Main {
     public static void main(String[] args) {
         if (args.length != 1){
             System.out.println("Has d'introduir una ruta al directori");
-            return;
+        } else {
+            ListaArbreDir.listarArbreDirectori(args[0]);
         }
-
-        ListaArbreDir.listarArbreDirectori(args[0]);
     }
 }
