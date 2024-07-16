@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/prova/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prova/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provahospital/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provahospital/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/biblioteca/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/biblioteca/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/delivery/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/delivery/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/escaperoom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/escaperoom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/hospital/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/hospital/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/rol/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/rol/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sprint0/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sprint3/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sprint3/src/main/resources" charset="UTF-8" />
   </component>

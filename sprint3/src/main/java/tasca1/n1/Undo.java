@@ -12,7 +12,7 @@ public class Undo {
         comandesHistorial = new ArrayList<>();
     }
 
-    public static synchronized Undo getInstancia() {
+    public static Undo getInstancia() {
         if (instancia == null) {
             instancia = new Undo();
         }

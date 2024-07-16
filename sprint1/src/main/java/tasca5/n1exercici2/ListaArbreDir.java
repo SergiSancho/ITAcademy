@@ -17,24 +17,25 @@ public class ListaArbreDir {
             File[] contingut = dir.listFiles();
             if (contingut == null) {
                 System.out.println("No es pot llegir el contingut del directori: " + ruta);
-                return;
-            }
-            Arrays.sort(contingut);
+            } else {
 
-            for (File arxiu : contingut) {
-                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                Arrays.sort(contingut);
 
-                if (arxiu.isFile()) {
-                    System.out.println(indentacio + "[F] " +
-                            arxiu.getName() + " Última modificació: " +
-                            sdf.format(arxiu.lastModified()));
-                } else {
-                    System.out.println(indentacio + "[D] " +
-                            arxiu.getName() + " Última modificació: " +
-                            sdf.format(arxiu.lastModified()));
-                    indentacio += "   ";
-                    listarArbreDirectori(arxiu.getPath());
-                    indentacio = indentacio.substring(0, indentacio.length() - 3);
+                for (File arxiu : contingut) {
+                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+                    if (arxiu.isFile()) {
+                        System.out.println(indentacio + "[F] " +
+                                arxiu.getName() + " Última modificació: " +
+                                sdf.format(arxiu.lastModified()));
+                    } else {
+                        System.out.println(indentacio + "[D] " +
+                                arxiu.getName() + " Última modificació: " +
+                                sdf.format(arxiu.lastModified()));
+                        indentacio += "   ";
+                        listarArbreDirectori(arxiu.getPath());
+                        indentacio = indentacio.substring(0, indentacio.length() - 3);
+                    }
                 }
             }
         }
