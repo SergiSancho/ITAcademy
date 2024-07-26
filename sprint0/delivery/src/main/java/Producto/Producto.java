@@ -11,7 +11,7 @@ public abstract class Producto {
         this.precio = precio;
     }
 
-    public abstract void Regalo();
+    public abstract void Regalo();//no tene sentido??
 
     public String getNombre() {
         return nombre;
