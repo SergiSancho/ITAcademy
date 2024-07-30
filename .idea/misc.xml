@@ -12,10 +12,16 @@
         <option value="$PROJECT_DIR$/blackRose/pom.xml" />
         <option value="$PROJECT_DIR$/Aprueba/pom.xml" />
         <option value="$PROJECT_DIR$/StringForEver/pom.xml" />
+        <option value="$PROJECT_DIR$/nuevodao/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Aprueba/pom.xml" />
+        <option value="$PROJECT_DIR$/StringForEver/pom.xml" />
+        <option value="$PROJECT_DIR$/blackRose/pom.xml" />
+        <option value="$PROJECT_DIR$/nuevodao/pom.xml" />
+        <option value="$PROJECT_DIR$/prova/pom.xml" />
         <option value="$PROJECT_DIR$/provahospital/pom.xml" />
       </set>
     </option>
