@@ -24,8 +24,3 @@ En tots els exercicis, crea un projecte amb una classe Main que demostri l'ús d
 - Mostra com funciona el patró Command que implementa els mètodes arrencar, accelerar i frenar per a cada tipus de vehicle.
 
 ---
-
-## Enllaços als mòduls
-- [Nivell 1 - Singleton](ruta/al/modulo/singleton)
-- [Nivell 2 - Abstract Factory](ruta/al/modulo/abstract-factory)
-- [Nivell 3 - Command](ruta/al/modulo/command)
